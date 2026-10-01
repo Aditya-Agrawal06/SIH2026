@@ -1,0 +1,41 @@
+[project]
+name = "rainfall-warning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "prashant10-kumar", email = "prashantk4644@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "elevation>=1.1.3",
+    "fastapi>=0.141.1",
+    "folium>=0.20.0",
+    "geopandas>=1.1.4",
+    "imdlib>=0.1.22",
+    "jupyter>=1.1.1",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.11.2",
+    "netcdf4>=1.7.4",
+    "numpy>=2.4.6",
+    "opencv-python-headless>=5.0.0.93",
+    "pandas>=3.0.6",
+    "pysheds>=0.5",
+    "rasterio>=1.4.4",
+    "requests>=2.34.2",
+    "rioxarray>=0.19.0",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.64.0",
+    "streamlit-folium>=0.27.4",
+    "torch>=2.14.0",
+    "ultralytics>=8.4.165",
+    "uvicorn[standard]>=0.53.0",
+    "xarray>=2026.7.0",
+]
+
+[project.scripts]
+rainfall-warning = "rainfall_warning:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
